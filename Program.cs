@@ -1,43 +1,91 @@
-﻿using System.Data;
+﻿using System.Collections;
+using System.Data;
 
 namespace EMPLOYEE_INFORMATION
 {
     internal class Program
     {
+       
+            static string[] empID = new string[100];
+            static string[] empName = new string[100];
+            static string[] empPosition = new string[100];
+            static string[] empDept = new string[100];
+            static string[] empStatus = new string[100];
+            static int empCount = 0;
+
+            static ArrayList hiringLog = new ArrayList();
+            static ArrayList promotionLog = new ArrayList();
+            static ArrayList movementLog = new ArrayList();
         static void Main(string[] args)
         {
-            Console.WriteLine("==EMPLOYEE INFORMATION (PROMOTION, MOVEMENT, AND HIRING==");
-            Console.WriteLine("1. Add Employee(CREATE)");
-            Console.WriteLine("2. View Employee(RETRIEVE)");
-            Console.WriteLine("3. Update Employee(UPDATE)");
-            Console.WriteLine("4. Delete Employee(DELETE)");
+            bool running = true;
+            string[] employeeName = { "Juan Dela Cruz", "Maria lacsinto", "Macy Lhou Rodico", "Ken Darwin", "Hudson AFK" };
+          
+            string[] employeeNumber = { "EMP001", "EMP002", "EMP003", "EMP004", "EMP005" };
+            string[] employeePosition = { "Software Engineer", "Data Analyst", "Network Admin", "Professor", "Web Developer" };
+            string[] empDepartment = { " IT", "IT", "IT", "Education", "IT" };
+            Console.WriteLine("==============================");
+            Console.WriteLine("EMPLOYEE MANAGEMENT SYSTEM");
+            Console.WriteLine("==============================");
 
-            string fname, lname;
-            char mInitial;
-            int age, employeeId;
-            Console.Write("Enter your First Name: ");
-            Console.Write("Enter your Last Name: ");
-            Console.Write("Enter your age: ");
-            Console.Write("Enter your Employee ID: ");
-
-            int choice = int.Parse(Console.ReadLine());
-
-            switch (choice)
+            while (running)
             {
-                case 1:
-                    AddEmployee();
-                    break;
-                case 2:
-                    ViewEmployee();
-                    break;
-                case 3:
-                    UpdateEmployee();
-                    break;
-                case 4:
-                    DeleteEmployee();
-                    break;
-         if (employ ==  )
+                Console.WriteLine("\n---MAIN MENU---");
+                Console.WriteLine("1. Hire New Employee: ");
+                Console.WriteLine("2. Promote Employee: ");
+                Console.WriteLine("3. Transfer/Movement: ");
+                Console.WriteLine("4. View All Employees: ");
+                Console.WriteLine("5. Search Employee: ");
+                Console.WriteLine("6. Exit");
+                Console.Write("\nEnter your Choice: ");
 
+                string choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        HireEmployee();
+                        break;
+                    case "2":
+                        PromoteEmployee();
+                        break;
+                    case "3":
+                        TransferEmployee();
+                        break;
+                    case "4":
+                        ViewAllEmployees();
+                        break;
+                    case "5":
+                        SearchEmployee();
+                        break;
+                    case "0":
+                        Console.WriteLine("\nExiting the system. Goodbye!");
+                        running = false;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        break;
+                }
+            }
+
+        }
+
+        static void HireEmployee()
+        {
+            Console.WriteLine("---HIRE NEW EMPLOYEE---");
+            if (empCount >= 100)
+            {
+                Console.WriteLine("Employee list is full!");
+                return;
+            }
+            Console.Write("Enter Employee ID: ");
+            string ID = Console.ReadLine();
+             if (FindEmployeeIndex(id) != -1)
+            {
+                Console.WriteLine("Employee ID already exists. Please try again.");
+            } 
+            {
+                }
             }
         }
     }
