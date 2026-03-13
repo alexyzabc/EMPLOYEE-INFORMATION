@@ -12,4 +12,3 @@ namespace EmployeeSystem.Models
     }
 }
 
-//models
