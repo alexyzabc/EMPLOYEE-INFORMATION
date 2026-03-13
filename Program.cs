@@ -1,12 +1,10 @@
-﻿using EmployeeSystem.BL;
-using EmployeeSystem.DL;
-using EmployeeSystem.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
+using EmployeeSystem.Models;
+using EmployeeSystem.DL;
+using EmployeeSystem.BL;
 
-namespace EmployeeSystem
+namespace EmployeeSystem.UI
 {
     internal class Program
     {

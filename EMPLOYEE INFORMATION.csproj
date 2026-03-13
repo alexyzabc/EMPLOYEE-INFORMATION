@@ -8,4 +8,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeSystem.BL\EmployeeSystem.BL.csproj" />
+    <ProjectReference Include="..\EmployeeSystem.DL\EmployeeSystem.DL.csproj" />
+    <ProjectReference Include="..\EmployeeSystem.Models\EmployeeSystem.Models.csproj" />
+  </ItemGroup>
+
 </Project>
