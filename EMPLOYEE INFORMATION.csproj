@@ -8,10 +8,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="BL\" />
-    <Folder Include="DL\" />
-    <Folder Include="MODELS\" />
-  </ItemGroup>
-
 </Project>
