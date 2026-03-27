@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using EmployeeSystem.Models;
 using EmployeeSystem.DL;
 using EmployeeSystem.BL;
@@ -9,14 +8,11 @@ namespace EmployeeSystem.UI
     internal class Program
     {
         static EmployeeData _data = new EmployeeData();
-        static EmployeeLogic _logic;
+        static EmployeeLogic _logic = new EmployeeLogic(_data);
 
         static void Main(string[] args)
         {
-            _logic = new EmployeeLogic(_data);
-
             Console.WriteLine("EMPLOYEE INFORMATION SYSTEM");
-
             bool running = true;
 
             while (running)
@@ -37,77 +33,75 @@ namespace EmployeeSystem.UI
 
                 switch (choice)
                 {
-                    case "1":
-                        HireEmployee();
-                        break;
-                    case "2":
-                        PromoteEmployee();
-                        break;
-                    case "3":
-                        Console.WriteLine("Feature coming soon.");
-                        break;
-                    case "4":
-                        Console.WriteLine("Feature coming soon.");
-                        break;
-                    case "5":
-                        Console.WriteLine("Feature coming soon.");
-                        break;
-                    case "6":
-                        Console.WriteLine("Feature coming soon.");
-                        break;
+                    case "1": HireEmployee(); break;
+                    case "2": PromoteEmployee(); break;
+                    case "3": TransferEmployee(); break;
+                    case "4": ViewAllEmployees(); break;
+                    case "5": Console.WriteLine("Feature coming soon."); break;
+                    case "6": Console.WriteLine("Feature coming soon."); break;
                     case "0":
-                        Console.WriteLine("Exiting system...");
                         running = false;
+                        Console.WriteLine("Exiting system...");
                         break;
-                    default:
-                        Console.WriteLine("Invalid choice.");
-                        break;
+                    default: Console.WriteLine("Invalid choice."); break;
                 }
             }
         }
 
+        static void ShowOptions(string[] options)
+        {
+            for (int i = 0; i < options.Length; i++)
+                Console.WriteLine($"[{i + 1}] {options[i]}");
+            Console.Write("Enter the number of your option: ");
+        }
+
         static void HireEmployee()
         {
-            Console.WriteLine("\nHIRE NEW EMPLOYEE: Enter the necessary information.");
+            Console.WriteLine("\nHIRE NEW EMPLOYEE:");
             Console.Write("Employee ID: "); string id = Console.ReadLine();
             Console.Write("Name: "); string name = Console.ReadLine();
             Console.Write("Position: "); string position = Console.ReadLine();
             Console.Write("Department: "); string dept = Console.ReadLine();
 
             string result = _logic.HireEmployee(id, name, position, dept);
-            Console.WriteLine(result.Split(':')[1]);
+            Console.WriteLine(result);
         }
 
         static void PromoteEmployee()
         {
             Console.WriteLine("\nPROMOTE EMPLOYEE:");
-            Console.Write("Enter Employee ID: ");
-            string id = Console.ReadLine();
-            int index = _logic.GetIndex(id);
+            Console.Write("Enter Employee ID: "); string id = Console.ReadLine();
+            Console.Write("Enter New Position: "); string newPos = Console.ReadLine();
 
-            if (index == -1) { Console.WriteLine("Employee not found."); return; }
-
-            Console.WriteLine($"Employee Found   : {_data.EmployeeList[index].Name}");
-            Console.WriteLine($"Current Position : {_data.EmployeeList[index].Position}");
-            Console.Write("Enter New Position: ");
-            string newPosition = Console.ReadLine();
-
-            string result = _logic.PromoteEmployee(id, newPosition);
-            Console.WriteLine(result.Split(':')[1]);
+            string result = _logic.PromoteEmployee(id, newPos);
+            Console.WriteLine(result);
         }
 
-        static int FindIndex(string id)
+        static void TransferEmployee()
         {
-            return _logic.GetIndex(id);
+            Console.WriteLine("\nTRANSFER EMPLOYEE:");
+            Console.Write("Enter Employee ID: "); string id = Console.ReadLine();
+            Console.Write("Enter New Department: "); string dept = Console.ReadLine();
+
+            string result = _logic.TransferEmployee(id, dept);
+            Console.WriteLine(result);
         }
 
-        static void ShowOptions(string[] options)
+        static void ViewAllEmployees()
         {
-            for (int x = 0; x < options.Length; x++)
+            Console.WriteLine("\nALL EMPLOYEES:");
+
+            if (_data.EmployeeList.Count == 0)
             {
-                Console.WriteLine($"[{x + 1}] {options[x]}");
+                Console.WriteLine("No employees found.");
+                return;
             }
-            Console.Write("Enter the number of your option: ");
+
+            foreach (var emp in _data.EmployeeList)
+            {
+                Console.WriteLine($"ID: {emp.Id} | Name: {emp.Name} | Position: {emp.Position} | Dept: {emp.Department} | Status: {emp.Status}");
+            }
+            Console.WriteLine();
         }
     }
 }
