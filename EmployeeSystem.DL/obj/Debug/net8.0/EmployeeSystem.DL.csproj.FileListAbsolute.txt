@@ -1,0 +1,15 @@
+C:\EMPLOYEEINFO\EmployeeSystem.DL\bin\Debug\net8.0\EmployeeSystem.DL.deps.json
+C:\EMPLOYEEINFO\EmployeeSystem.DL\bin\Debug\net8.0\EmployeeSystem.DL.dll
+C:\EMPLOYEEINFO\EmployeeSystem.DL\bin\Debug\net8.0\EmployeeSystem.DL.pdb
+C:\EMPLOYEEINFO\EmployeeSystem.DL\bin\Debug\net8.0\EmployeeSystem.Models.dll
+C:\EMPLOYEEINFO\EmployeeSystem.DL\bin\Debug\net8.0\EmployeeSystem.Models.pdb
+C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\EmployeeSystem.DL.csproj.AssemblyReference.cache
+C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\EmployeeSystem.DL.GeneratedMSBuildEditorConfig.editorconfig
+C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\EmployeeSystem.DL.AssemblyInfoInputs.cache
+C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\EmployeeSystem.DL.AssemblyInfo.cs
+C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\EmployeeSystem.DL.csproj.CoreCompileInputs.cache
+C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\Employee.64D537C6.Up2Date
+C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\EmployeeSystem.DL.dll
+C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\refint\EmployeeSystem.DL.dll
+C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\EmployeeSystem.DL.pdb
+C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\ref\EmployeeSystem.DL.dll

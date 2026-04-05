@@ -1,0 +1,30 @@
+[
+  {
+    "Id": "34567",
+    "Name": "Alex",
+    "Position": "Assistant",
+    "Department": "Engineering",
+    "Status": "Active"
+  },
+  {
+    "Id": "67890",
+    "Name": "Alex",
+    "Position": "Manager",
+    "Department": "IT",
+    "Status": "Active"
+  },
+  {
+    "Id": "66778",
+    "Name": "Nate",
+    "Position": "CEO",
+    "Department": "Engineering",
+    "Status": "Active"
+  },
+  {
+    "Id": "66776",
+    "Name": "Aleli",
+    "Position": "CEO",
+    "Department": "Architecture",
+    "Status": "Active"
+  }
+]

@@ -1,0 +1,11 @@
+C:\EMPLOYEEINFO\EmployeeSystem.Models\bin\Debug\net8.0\EmployeeSystem.Models.deps.json
+C:\EMPLOYEEINFO\EmployeeSystem.Models\bin\Debug\net8.0\EmployeeSystem.Models.dll
+C:\EMPLOYEEINFO\EmployeeSystem.Models\bin\Debug\net8.0\EmployeeSystem.Models.pdb
+C:\EMPLOYEEINFO\EmployeeSystem.Models\obj\Debug\net8.0\EmployeeSystem.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\EMPLOYEEINFO\EmployeeSystem.Models\obj\Debug\net8.0\EmployeeSystem.Models.AssemblyInfoInputs.cache
+C:\EMPLOYEEINFO\EmployeeSystem.Models\obj\Debug\net8.0\EmployeeSystem.Models.AssemblyInfo.cs
+C:\EMPLOYEEINFO\EmployeeSystem.Models\obj\Debug\net8.0\EmployeeSystem.Models.csproj.CoreCompileInputs.cache
+C:\EMPLOYEEINFO\EmployeeSystem.Models\obj\Debug\net8.0\EmployeeSystem.Models.dll
+C:\EMPLOYEEINFO\EmployeeSystem.Models\obj\Debug\net8.0\refint\EmployeeSystem.Models.dll
+C:\EMPLOYEEINFO\EmployeeSystem.Models\obj\Debug\net8.0\EmployeeSystem.Models.pdb
+C:\EMPLOYEEINFO\EmployeeSystem.Models\obj\Debug\net8.0\ref\EmployeeSystem.Models.dll

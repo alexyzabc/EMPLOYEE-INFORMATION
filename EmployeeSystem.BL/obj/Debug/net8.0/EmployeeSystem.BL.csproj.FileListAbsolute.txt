@@ -1,0 +1,17 @@
+C:\EMPLOYEEINFO\EmployeeSystem.BL\bin\Debug\net8.0\EmployeeSystem.BL.deps.json
+C:\EMPLOYEEINFO\EmployeeSystem.BL\bin\Debug\net8.0\EmployeeSystem.BL.dll
+C:\EMPLOYEEINFO\EmployeeSystem.BL\bin\Debug\net8.0\EmployeeSystem.BL.pdb
+C:\EMPLOYEEINFO\EmployeeSystem.BL\bin\Debug\net8.0\EmployeeSystem.DL.dll
+C:\EMPLOYEEINFO\EmployeeSystem.BL\bin\Debug\net8.0\EmployeeSystem.Models.dll
+C:\EMPLOYEEINFO\EmployeeSystem.BL\bin\Debug\net8.0\EmployeeSystem.DL.pdb
+C:\EMPLOYEEINFO\EmployeeSystem.BL\bin\Debug\net8.0\EmployeeSystem.Models.pdb
+C:\EMPLOYEEINFO\EmployeeSystem.BL\obj\Debug\net8.0\EmployeeSystem.BL.csproj.AssemblyReference.cache
+C:\EMPLOYEEINFO\EmployeeSystem.BL\obj\Debug\net8.0\EmployeeSystem.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\EMPLOYEEINFO\EmployeeSystem.BL\obj\Debug\net8.0\EmployeeSystem.BL.AssemblyInfoInputs.cache
+C:\EMPLOYEEINFO\EmployeeSystem.BL\obj\Debug\net8.0\EmployeeSystem.BL.AssemblyInfo.cs
+C:\EMPLOYEEINFO\EmployeeSystem.BL\obj\Debug\net8.0\EmployeeSystem.BL.csproj.CoreCompileInputs.cache
+C:\EMPLOYEEINFO\EmployeeSystem.BL\obj\Debug\net8.0\Employee.9C1F37C6.Up2Date
+C:\EMPLOYEEINFO\EmployeeSystem.BL\obj\Debug\net8.0\EmployeeSystem.BL.dll
+C:\EMPLOYEEINFO\EmployeeSystem.BL\obj\Debug\net8.0\refint\EmployeeSystem.BL.dll
+C:\EMPLOYEEINFO\EmployeeSystem.BL\obj\Debug\net8.0\EmployeeSystem.BL.pdb
+C:\EMPLOYEEINFO\EmployeeSystem.BL\obj\Debug\net8.0\ref\EmployeeSystem.BL.dll
