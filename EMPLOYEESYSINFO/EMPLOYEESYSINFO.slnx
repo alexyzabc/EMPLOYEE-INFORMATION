@@ -1,5 +1,0 @@
-<Solution>
-  <Project Path="../EMPLOYEEINFODATALAYER/EMPLOYEEINFODATALAYER.csproj" />
-  <Project Path="../EMPLOYEEINFOMODELS/EMPLOYEEINFOMODELS.csproj" />
-  <Project Path="EMPLOYEESYSINFO.csproj" />
-</Solution>
