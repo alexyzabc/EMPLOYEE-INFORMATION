@@ -17,41 +17,36 @@ namespace EmployeeSystem.DL
 
         public EmployeeData()
         {
-            
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
-            string dataFolder = Path.GetFullPath(
-                Path.Combine(basePath, "..\\..\\..\\..\\EMPLOYEE INFORMATION\\Data"));
-
+            string dataFolder = Path.GetFullPath(Path.Combine(basePath, "..\\..\\..\\..\\EMPLOYEE INFORMATION\\Data"));
             Directory.CreateDirectory(dataFolder);
             _jsonFilePath = Path.Combine(dataFolder, "employees.json");
 
             if (!File.Exists(_jsonFilePath))
                 File.WriteAllText(_jsonFilePath, "[]");
 
-            Console.WriteLine("SAVING TO: " + _jsonFilePath);
             LoadFromJson();
         }
 
         public void LoadFromJson()
         {
             string json = File.ReadAllText(_jsonFilePath);
-            EmployeeList = JsonSerializer.Deserialize<List<Employee>>(json)
-                ?? new List<Employee>();
+            EmployeeList = JsonSerializer.Deserialize<List<Employee>>(json) ?? new List<Employee>();
         }
 
         public void SaveToJson()
         {
-            string json = JsonSerializer.Serialize(EmployeeList,
-                new JsonSerializerOptions { WriteIndented = true });
+            string json = JsonSerializer.Serialize(EmployeeList, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(_jsonFilePath, json);
-            Console.WriteLine("SAVED!");
         }
 
         public int FindIndex(string id)
         {
             for (int i = 0; i < EmployeeList.Count; i++)
+            {
                 if (EmployeeList[i].Id == id)
                     return i;
+            }
             return -1;
         }
     }

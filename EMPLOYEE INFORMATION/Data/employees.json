@@ -26,5 +26,12 @@
     "Position": "CEO",
     "Department": "Architecture",
     "Status": "Active"
+  },
+  {
+    "Id": "65656",
+    "Name": "Khenzo",
+    "Position": "Analyst",
+    "Department": "IT",
+    "Status": "Active"
   }
 ]

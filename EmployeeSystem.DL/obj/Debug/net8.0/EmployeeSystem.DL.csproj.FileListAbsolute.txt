@@ -13,3 +13,4 @@ C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\EmployeeSystem.DL.dll
 C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\refint\EmployeeSystem.DL.dll
 C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\EmployeeSystem.DL.pdb
 C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\ref\EmployeeSystem.DL.dll
+C:\EMPLOYEEINFO\EmployeeSystem.DL\obj\Debug\net8.0\EmployeeSystem.DL.sourcelink.json
